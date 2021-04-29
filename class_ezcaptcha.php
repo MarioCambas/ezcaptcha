@@ -9,7 +9,7 @@ class captcha{
         'randPattern'=>true,
         'randColor'=>true,
         'randAngle'=>true);
-    var $font=array('./VeraBd.ttf','./FFF_Tusj.ttf','./armalite_rifle.ttf','./Capture_it.ttf');
+    var $font=array('./VeraBd.ttf','./FFF_Tusj.ttf','./Capture_it.ttf');
     private function Captcha(){
         $_SESSION["captcha_code"]='';
         $random_alpha = md5(rand());
@@ -52,7 +52,7 @@ class captcha{
             // Adding shadow...
             $sizeOftheFont=$fontSize;
             if($this->captchaParams['randFontSizes']){ $sizeOftheFont=rand(10,$fontSize+5);}
-            $font=$this->font[rand(0,3)];
+            $font=$this->font[rand(0,count($this->font)];
             imagettftext($target_layer, $sizeOftheFont, $ang, 7+$i*$fontSize, $baseLineText+2, $grey, $font, $code);
             // Adding text...
             imagettftext($target_layer, $sizeOftheFont, $ang, 5+$i*$fontSize, $baseLineText, $captcha_text_color, $font, $code);
@@ -93,7 +93,7 @@ class captcha{
             	return valid;
             }
             function refreshCaptcha() {
-                $(\"#captcha_code\").attr('src','".$this->url."?'+getParams());
+                $(\"#captcha_code\").attr('src','".$this->url."');
             }
         </script>";
     }
@@ -105,7 +105,6 @@ class captcha{
         if (isset($_GET['getHtml'])){
             echo $this->setHtml();
         } else {
-            $this->captchaParams=$_GET;
             $this->Captcha();
         }
     }
