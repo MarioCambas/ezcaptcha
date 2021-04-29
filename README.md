@@ -20,7 +20,7 @@ randPattern = Use random pattern backgroung
 randColor = Use random color backgroung
 randAngle = Use random angle to draw the caracters
 
-<code>
+```php
 <?php
 session_start();
 class ezcaptcha{
@@ -147,7 +147,7 @@ class ezcaptcha{
 $captcha = new ezcaptcha();
 
 ?>
-</code>
+```
 
 Step 2: Add the HTML tag <captcha></captcha> wherever you want to show the captcha component in your HTML file.
 
