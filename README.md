@@ -11,7 +11,7 @@ HOW TO INSTALL AND USE
  First things first. I want to say thanks to Vic Fieger, Magnus Cederholm, Koczman Bálint (Cpr.Sparhelt) and Bitstream Inc. for develop the fonts used in this project.
 
  Easy to confgure in three steps.
-Step 1: Copy the following PHP code or download the php file class_ezcaptcha.php and copy it to your server.
+Step 1: Download the php file class_ezcaptcha.php and copy it to your server.
 You can play latter with the following security features or options.
 randFontSizes = Use random font sizes
 randCaptchaLeng = Use random captcha length
@@ -20,13 +20,7 @@ randPattern = Use random pattern backgroung
 randColor = Use random color backgroung
 randAngle = Use random angle to draw the caracters
 
-<xmp style="clear:both;
-    border: 2px solid gainsboro;
-    border-radius: 25px;
-    padding: 10px;
-    width: 800px;
-    white-space: pre-wrap;
-    background-color: ghostwhite;">
+
 <?php
 session_start();
 class ezcaptcha{
@@ -151,47 +145,17 @@ class ezcaptcha{
 }
 $captcha = new ezcaptcha();
 ?>
-</xmp>
-<div style="clear:both;">
-  HTML code: Client Side<br>
-     This modul use JQuery, you have to add JQuery in your HTML code.
-     Insert the html tags <capcha></captcha> where you want to show the captcha
-</div>
-<xmp style="clear:both;
-    border: 2px solid gainsboro;
-    border-radius: 25px;
-    padding: 10px;
-    width: 800px;
-    white-space: pre-wrap;
-    background-color: ghostwhite;">
-<captcha></captcha>
-</xmp>
-<div style="clear:both;">
-    Javascript code: Client Side Insert this javascript at the end of your html file to load the captcha component
-</div>
-<xmp style="clear:both;
-    border: 2px solid gainsboro;
-    border-radius: 25px;
-    padding: 10px;
-    width: 800px;
-    white-space: pre-wrap;
-    background-color: ghostwhite;">
-(function(){
-        $.ajax({url:"./class_ezcaptcha.php?getHtml=1", success: function(result){
-        $("captcha").html(result);
-    }});
-})();
-</xmp>
 
-Step 2: Add the HTML tag <xmp><captcha></captcha></xmp> wherever you want to show the captcha component in your HTML file.
+
+Step 2: Add the HTML tag <captcha></captcha> wherever you want to show the captcha component in your HTML file.
 
 Step 3: Insert the following javascript/JQuery at the end of your html file to load the captcha component.
 Make sure you include JQuery in your file.
-<xmp>
+
   (function(){
         $.ajax({url:"./class_ezcaptcha.php?getHtml=1", success: function(result){
         $("captcha").html(result);
     }});
 })();
- </xmp>
+
 
