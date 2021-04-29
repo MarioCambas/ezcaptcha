@@ -10,7 +10,8 @@ The class can also generate HTML and JavaScript for the form to display the vali
 # HOW TO INSTALL AND USE 
  First things first. I want to say thanks to Vic Fieger, Magnus Cederholm, Koczman Bálint (Cpr.Sparhelt) and Bitstream Inc. for develop the fonts used in this project.
 
- Easy to confgure in three steps.
+Easy to confgure in three steps.
+
 Step 1: Copy the following code or the php file class_ezcaptcha.php and copy it to your server.
 You can play latter with the following security features or options.
 randFontSizes = Use random font sizes
