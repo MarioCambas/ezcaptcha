@@ -11,7 +11,7 @@ HOW TO INSTALL AND USE
  First things first. I want to say thanks to Vic Fieger, Magnus Cederholm, Koczman Bálint (Cpr.Sparhelt) and Bitstream Inc. for develop the fonts used in this project.
 
  Easy to confgure in three steps.
-Step 1: Download the php file class_ezcaptcha.php and copy it to your server.
+Step 1: Copy the following code or the php file class_ezcaptcha.php and copy it to your server.
 You can play latter with the following security features or options.
 randFontSizes = Use random font sizes
 randCaptchaLeng = Use random captcha length
@@ -143,7 +143,9 @@ class ezcaptcha{
         }
     }
 }
+
 $captcha = new ezcaptcha();
+
 ?>
 </code>
 
