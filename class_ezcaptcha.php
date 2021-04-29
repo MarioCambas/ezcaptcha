@@ -9,7 +9,7 @@ class captcha{
         'randPattern'=>true,
         'randColor'=>true,
         'randAngle'=>true);
-    var $font=array('./VeraBd.ttf','./FFF_Tusj.ttf','./Capture_it.ttf');
+    var $font=array('./VeraBd.ttf','./FFF_Tusj.ttf');
     private function Captcha(){
         $_SESSION["captcha_code"]='';
         $random_alpha = md5(rand());
