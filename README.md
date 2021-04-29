@@ -20,7 +20,7 @@ randPattern = Use random pattern backgroung
 randColor = Use random color backgroung
 randAngle = Use random angle to draw the caracters
 
-
+<code>
 <?php
 session_start();
 class ezcaptcha{
@@ -145,17 +145,18 @@ class ezcaptcha{
 }
 $captcha = new ezcaptcha();
 ?>
-
+</code>
 
 Step 2: Add the HTML tag <captcha></captcha> wherever you want to show the captcha component in your HTML file.
 
 Step 3: Insert the following javascript/JQuery at the end of your html file to load the captcha component.
 Make sure you include JQuery in your file.
 
-  (function(){
+<code>
+ (function(){
         $.ajax({url:"./class_ezcaptcha.php?getHtml=1", success: function(result){
         $("captcha").html(result);
     }});
 })();
-
+</code>
 
