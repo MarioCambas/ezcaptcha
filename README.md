@@ -149,7 +149,7 @@ $captcha = new ezcaptcha();
 ?>
 ```
 
-Step 2: Add the HTML tag ```html<captcha></captcha>``` wherever you want to show the captcha component in your HTML file.
+Step 2: Add the HTML tag ```<captcha></captcha>``` wherever you want to show the captcha component in your HTML file.
 
 Step 3: Insert the following javascript/JQuery at the end of your html file to load the captcha component.
 Make sure you include JQuery in your file.
