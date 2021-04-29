@@ -82,7 +82,7 @@ class ezcaptcha{
             // Adding shadow...
             $sizeOftheFont=$fontSize;
             if($this->captchaParams['randFontSizes']){ $sizeOftheFont=rand(10,$fontSize+5);}
-            $font=$this->font[rand(0,count($this->font))];
+            $font=$this->font[rand(0,count($this->font)-1)];
             imagettftext($target_layer,$sizeOftheFont,$ang,7+$i*$fontSize,$baseLineText+2,$grey,$font,$code);
             //Addingtext...
             imagettftext($target_layer,$sizeOftheFont,$ang,5+$i*$fontSize,$baseLineText,$captcha_text_color,
