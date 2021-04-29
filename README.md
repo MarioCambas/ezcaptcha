@@ -13,13 +13,16 @@ The class can also generate HTML and JavaScript for the form to display the vali
 Easy to confgure in three steps.
 
 Step 1: Copy the following code or the php file class_ezcaptcha.php and copy it to your server.
+
 You can play latter with the following security features or options.
+```
 randFontSizes = Use random font sizes
 randCaptchaLeng = Use random captcha length
 randUppercase = Use random upper or lowercase caracters
 randPattern = Use random pattern backgroung
 randColor = Use random color backgroung
 randAngle = Use random angle to draw the caracters
+```
 
 ```php
 <?php
