@@ -7,7 +7,7 @@ The random text is stored in a session variable, so the class can verify if the 
 The class can also generate HTML and JavaScript for the form to display the validation image.
 
 
-HOW TO INSTALL AND USE 
+# HOW TO INSTALL AND USE 
  First things first. I want to say thanks to Vic Fieger, Magnus Cederholm, Koczman Bálint (Cpr.Sparhelt) and Bitstream Inc. for develop the fonts used in this project.
 
  Easy to confgure in three steps.
